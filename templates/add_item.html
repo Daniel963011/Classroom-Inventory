@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Item</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <section class = "bg-light text-center py-5">
+        <h1 class="display-1">Add new item</h1>
+        <p class="h1">Fill out the form below to add an item to the inventory!</p>
+    </section>
+    
+
+    <section class = "bg-warning text-center py-5">
+        <form method = "POST">
+            <div class="mb-2">
+                <label for="nameInput" class="form-label">Item Name:</label>
+                <input type="text" class="form-control-lg" id="nameInput" aria-describedby="nameInputHelp" name = "name"><br>
+            
+                <label for="numInput" class="form-label">Quantity:</label>
+                <input type="text" class="form-control-lg" id="numInput" aria-describedby="nameInputHelp" name = "quantity"><br>
+              
+                <label for="categoryInput" class="form-label">Category:</label>
+                <input type="text" class="form-control-lg" id="categoryInput" aria-describedby="categoryInputHelp" name = "category"><br>
+                
+                <label for="locationInput" class="form-label">Location:</label>
+                <input type="text" class="form-control-lg" id="locationInput" aria-describedby="categoryInputHelp" name = "location"><br>
+              </div>
+            <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+        </form>
+    </section>
+    
+    <section class = "bg-light text-center py-5">
+        <p class="h2">Click this button to go back!</p>
+        <a class="btn btn-primary" href="{{ url_for('index') }}" role="button">Go back</a>
+    </section>
+
+    <section class = "text-bg-secondary p-3">
+        <div class = "text-center">
+            Daniel Campbell
+        </div>
+        <div class="text-center">
+            <a href = "www.linkedin.com/in/daniel-campbell-160152115" alt="LinkedIn" class="link-light">LinkedIn</a>
+            <a href = "" alt="Github" class="link-light"> Github</a>
+            <a href = "mailto:danielcampbell1130@gmail.com" alt="Email" class="link-light"> Email me</a>
+        </div>
+        <div class = "text-center">
+            This is built with Bootstap5, Flask, and Python
+        </div>
+      </section>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
