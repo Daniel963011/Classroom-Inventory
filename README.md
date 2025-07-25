@@ -1,0 +1,1 @@
+A simple web-based inventory manager built with Flask and SQLite. This application allowed me to keep track of school supplies in my classroom. I was able to add, view, edit, and delete classroom items.
